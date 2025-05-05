@@ -2,8 +2,8 @@ import React from 'react'
 
 const MachineLearning = () => {
     return (
-        <main className='w-screen h-fit min-h-200'>
-            <span>This is Machine Learning</span>
+        <main className='w-screen h-fit min-h-screen bg-black'>
+            <span className='text-white'>This is Machine Learning</span>
         </main>
       )
 }

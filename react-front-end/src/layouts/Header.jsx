@@ -34,7 +34,7 @@ const Header = () => {
                     </Link>
                 </li>
                 <li className='block w-fit h-full'> 
-                    <Link to='/web-development/default' className='block pl-10 pr-10 pt-4 w-full h-full text-xl text-white font-bold hover:bg-white hover:text-black hover:rounded-[5px]'>
+                    <Link to='/web-development' className='block pl-10 pr-10 pt-4 w-full h-full text-xl text-white font-bold hover:bg-white hover:text-black hover:rounded-[5px]'>
                         Web Development
                     </Link>
                 </li>
@@ -42,10 +42,10 @@ const Header = () => {
         </nav>
         
         {/* Sign in */}
-        <div className='block w-1/10 h-full'>
-        <Link to='/sig-in' className='block pl-10 pr-10 pt-4 w-fit h-full text-xl text-white font-bold hover:bg-white hover:text-black hover:rounded-[5px]'>
-            Sign In
-        </Link>
+        <div className='flex items-center justify-center w-1/10 h-full'>
+            <Link to='/account-sig-in' className='block pl-5 pr-5 pt-4 w-fit h-full text-xl text-white font-bold hover:bg-white hover:text-black hover:rounded-[10px]'>
+                Sign In
+            </Link>
         </div>
     </header>
   )

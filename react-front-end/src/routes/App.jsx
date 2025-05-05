@@ -1,55 +1,37 @@
-import Header from '../layouts/Header.jsx'
-import Footer from '../layouts/Footer.jsx'
+import React from 'react'
+import {Routes, Route } from "react-router-dom";
 
 
-import Home from '../pages/navigation/Home.jsx'
-import MachineLearning from '../pages/navigation/MachineLearning.jsx'
-import DeepLearning from '../pages/navigation/DeepLearning.jsx'
-import WebDevelopment from '../pages/navigation/WebDevelopment.jsx'
+import AppLayout from './AppLayout';
 
 
-import Internet from '../web-production/Internet.jsx'
-import HTTP from '../web-production/HTTP.jsx'
-import DNS from '../web-production/DNS.jsx'
-import Hosting from '../web-production/Hosting.jsx'
-import Browser from '../web-production/Browser.jsx'
-import { Routes, Route } from "react-router-dom";
-import Default from '../web-production/Default.jsx'
-import HTMLBasic from '../pages/document-html/HTMLBasic.jsx'
+import Home from '../pages/navigation/Home';
+import MachineLearning from '../pages/navigation/MachineLearning';
+import DeepLearning from '../pages/navigation/DeepLearning';
+import WebDevelopment from '../pages/navigation/WebDevelopment';
+
+
+import Account from '../layouts/Account';
+import SigIn from '../pages/account/SigIn';
+import SigUp from '../pages/account/SigUp';
+
 
 function App() {
     return (
       <>
-        {/* Header */}
-        <Header />
-
-        {/* Main */}
         <Routes>
-
-          {/* Home */}
-          <Route path="/" element={<Home />} />
-
-          {/* Machine Learning */}
-          <Route path="/machine-learning" element={<MachineLearning />} />
-
-          {/* Deep Learning */}
-          <Route path="/deep-learning" element={<DeepLearning />} />
-
-          {/* Website Product */}
-          <Route path="/web-development" element={<WebDevelopment />}>
-            <Route path="default" element={<Default />} />
-            <Route path="internet" element={<Internet />} />
-            <Route path="http" element={<HTTP />} />
-            <Route path="dns" element={<DNS />} />
-            <Route path="hosting" element={<Hosting />} />
-            <Route path="browser" element={<Browser />} />
-            <Route path="html-basic" element={<HTMLBasic />} />
+          <Route element={<AppLayout/>}>
+            <Route path="/" element={<Home />} />
+            <Route path="/machine-learning" element={<MachineLearning />} />
+            <Route path="/deep-learning" element={<DeepLearning />} />
+            <Route path="/web-development" element={<WebDevelopment />} />
           </Route>
-          
-        </Routes>
 
-        {/* Footer */}
-        <Footer />
+          <Route element={<Account/>}>
+            <Route path="/account-sig-in" element={<SigIn />} />
+            <Route path="/account-sig-up" element={<SigUp />} />
+          </Route>
+        </Routes>
       </>
     );
   }

@@ -15,10 +15,10 @@ const Home = () => {
   };
 
   return (
-    <main className='w-screen h-fit min-h-180 bg-black'>
+    <main className='w-screen h-fit min-h-screen bg-black'>
 
       {/* Button */}
-      <button onClick={handleClick} className='flex items-center justify-center absolute top-30 right-15 w-15 h-15 rounded-full bg-white cursor-pointer font-bold z-1'>
+      <button onClick={handleClick} className='flex items-center justify-center absolute top-30 right-15 w-12 h-12 rounded-full bg-white cursor-pointer font-bold z-1'>
         <img 
           src={
             sound
@@ -26,7 +26,7 @@ const Home = () => {
               : '/src/assets/icons/sound-off.png'
           }
           alt={sound ? 'icon-sound-on' : 'icon-sound-off'}
-          className='w-12 h-12 rounded-full'
+          className='w-8 h-8 rounded-full'
         />
       </button>
 
@@ -35,7 +35,7 @@ const Home = () => {
         <figure className='block w-full h-screen'>
           <video
             ref={videoRef}
-            className='w-screen h-full object-cover'
+            className='w-full h-full object-cover'
             autoPlay    
             muted        
             loop
