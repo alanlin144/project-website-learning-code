@@ -3,120 +3,44 @@ import { Outlet, Link } from "react-router-dom";
 
 const WebDevelopment = () => {
   return (
-    <main className='flex flex-row justify-end d w-screen h-fit min-h-300'>
-        <div className='fixed left-0 w-15/100 h-full z-0 overflow-x-auto bg-blue-50'>
-            <ul className='flex flex-col w-full h-full'>
+    <main className='flex flex-row w-screen h-fit min-h-screen'>
+        <div className='fixed left-0 w-15/100 h-fit min-h-screen z-0 overflow-x-auto bg-black'>
+            <ul className='flex flex-col pt-10 pb-10'>
+                <span className='w-full h-full text-xl pl-10 pt-3 pb-3 text-white font-bold'>{'</>'} HTML</span>
                 <li>
-                    <Link to='internet' className='block w-full h-full text-xl pl-10 pt-3 pb-3 font-bold hover:bg-blue-400 rounded-[5px]'>
-                        Internet
+                    <Link to='html-basic' className='block w-full h-full text-xl pl-10 pt-3 pb-3 text-white font-bold hover:bg-white hover:text-black'>
+                        Basic
                     </Link>
                 </li>
                 <li>
-                    <Link to='http' className='block w-full h-full text-xl pl-10 pt-3 pb-3 font-bold hover:bg-blue-400 rounded-[5px]'>
-                        HTTP
+                    <Link to='html-form' className='block w-full h-full text-xl pl-10 pt-3 pb-3 text-white font-bold hover:bg-white hover:text-black'>
+                        Form and Validation
                     </Link>
-                </li>
+                </li> 
                 <li>
-                    <Link to='dns' className='block w-full h-full text-xl pl-10 pt-3 pb-3 font-bold hover:bg-blue-400 rounded-[5px]'>
-                        DNS
+                    <Link to='html-semantic' className='block w-full h-full text-xl pl-10 pt-3 pb-3 text-white font-bold hover:bg-white hover:text-black'>
+                        Semantic
                     </Link>
-                </li>                
-                <li>
-                    <Link to='hosting' className='block w-full h-full text-xl pl-10 pt-3 pb-3 font-bold hover:bg-blue-400 rounded-[5px]'>
-                        Hosting
-                    </Link>
-                </li>                
-                <li>
-                    <Link to='browser' className='block w-full h-full text-xl pl-10 pt-3 pb-3 font-bold hover:bg-blue-400 rounded-[5px]'>
-                        Browser
-                    </Link>
-                </li>
-                <li>
-                    <Link to='html-basic' className='block w-full h-full text-xl pl-10 pt-3 pb-3 font-bold hover:bg-blue-400 rounded-[5px]'>
-                        HTML-Basic
-                    </Link>
-                </li>
-                <li>
-                    <Link to='html-basic' className='block w-full h-full text-xl pl-10 pt-3 pb-3 font-bold hover:bg-blue-400 rounded-[5px]'>
-                        HTML-Basic
-                    </Link>
-                </li>
-                <li>
-                    <Link to='html-basic' className='block w-full h-full text-xl pl-10 pt-3 pb-3 font-bold hover:bg-blue-400 rounded-[5px]'>
-                        HTML-Basic
-                    </Link>
-                </li>
-                <li>
-                    <Link to='html-basic' className='block w-full h-full text-xl pl-10 pt-3 pb-3 font-bold hover:bg-blue-400 rounded-[5px]'>
-                        HTML-Basic
-                    </Link>
-                </li>
-                <li>
-                    <Link to='html-basic' className='block w-full h-full text-xl pl-10 pt-3 pb-3 font-bold hover:bg-blue-400 rounded-[5px]'>
-                        HTML-Basic
-                    </Link>
-                </li>
-                <li>
-                    <Link to='html-basic' className='block w-full h-full text-xl pl-10 pt-3 pb-3 font-bold hover:bg-blue-400 rounded-[5px]'>
-                        HTML-Basic
-                    </Link>
-                </li>
-                <li>
-                    <Link to='html-basic' className='block w-full h-full text-xl pl-10 pt-3 pb-3 font-bold hover:bg-blue-400 rounded-[5px]'>
-                        HTML-Basic
-                    </Link>
-                </li>
-                <li>
-                    <Link to='html-basic' className='block w-full h-full text-xl pl-10 pt-3 pb-3 font-bold hover:bg-blue-400 rounded-[5px]'>
-                        HTML-Basic
-                    </Link>
-                </li>
-                <li>
-                    <Link to='html-basic' className='block w-full h-full text-xl pl-10 pt-3 pb-3 font-bold hover:bg-blue-400 rounded-[5px]'>
-                        HTML-Basic
-                    </Link>
-                </li>
-                <li>
-                    <Link to='html-basic' className='block w-full h-full text-xl pl-10 pt-3 pb-3 font-bold hover:bg-blue-400 rounded-[5px]'>
-                        HTML-Basic
-                    </Link>
-                </li>
-                <li>
-                    <Link to='html-basic' className='block w-full h-full text-xl pl-10 pt-3 pb-3 font-bold hover:bg-blue-400 rounded-[5px]'>
-                        HTML-Basic
-                    </Link>
-                </li>
-                <li>
-                    <Link to='html-basic' className='block w-full h-full text-xl pl-10 pt-3 pb-3 font-bold hover:bg-blue-400 rounded-[5px]'>
-                        HTML-Basic
-                    </Link>
-                </li>
-                <li>
-                    <Link to='html-basic' className='block w-full h-full text-xl pl-10 pt-3 pb-3 font-bold hover:bg-blue-400 rounded-[5px]'>
-                        HTML-Basic
-                    </Link>
-                </li>
-                <li>
-                    <Link to='html-basic' className='block w-full h-full text-xl pl-10 pt-3 pb-3 font-bold hover:bg-blue-400 rounded-[5px]'>
-                        HTML-Basic
-                    </Link>
-                </li>
-                <li>
-                    <Link to='html-basic' className='block w-full h-full text-xl pl-10 pt-3 pb-3 font-bold hover:bg-blue-400 rounded-[5px]'>
-                        HTML-Basic
-                    </Link>
-                </li>
-                <li>
-                    <Link to='html-basic' className='block w-full h-full text-xl pl-10 pt-3 pb-3 font-bold hover:bg-blue-400 rounded-[5px]'>
-                        HTML-Basic
-                    </Link>
-                </li>
+                </li>                               
+
             </ul>
         </div>
-        <div className='w-70/100 h-fit min-h-300 p-30'>
+
+
+        <div className='fixed right-0 w-15/100 h-screen'>
+            <img src='/src/assets/images/rocket.png' 
+                alt='rocket' 
+                className='w-full h-full'>
+            </img>
+        </div>
+
+
+
+        <div className='w-15/100 h-fit min-h-screen'></div>
+        <div className='w-70/100 h-fit min-h-screen pt-30 pl-50 pb-30 bg-black text-white tracking-wide leading-loose'>
             <Outlet />
         </div>
-        <div className='w-15/100 h-fit min-h-300 bg-gray-200'></div>
+        <div className='w-15/100 h-fit min-h-screen'></div>
     </main>
   )
 }

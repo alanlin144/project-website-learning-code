@@ -15,6 +15,9 @@ import Account from '../layouts/Account';
 import SigIn from '../pages/account/SigIn';
 import SigUp from '../pages/account/SigUp';
 
+import HTMLBasic from '../pages/web-development/code-html/HTMLBasic';
+import HTMLForm from '../pages/web-development/code-html/HTMLForm';
+import HTMLSemantic from '../pages/web-development/code-html/HTMLSemantic';
 
 function App() {
     return (
@@ -24,7 +27,11 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/machine-learning" element={<MachineLearning />} />
             <Route path="/deep-learning" element={<DeepLearning />} />
-            <Route path="/web-development" element={<WebDevelopment />} />
+            <Route path="/web-development" element={<WebDevelopment />}>
+              <Route path="html-basic" element={<HTMLBasic />} />
+              <Route path="html-form" element={<HTMLForm />} />
+              <Route path="html-semantic" element={<HTMLSemantic />} />
+            </Route>
           </Route>
 
           <Route element={<Account/>}>
